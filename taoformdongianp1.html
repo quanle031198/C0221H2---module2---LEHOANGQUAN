@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tạo form đơn giản</title>
+    </head>
+    <body>
+<div id="all">
+    
+    <form>
+    <table >
+        <tr>
+            <th colspan="4">Sở thích của bạn</th>
+        </tr>
+        <tr>
+            <td>
+                <label class="tll">Họ và tên</label>
+                
+            </td>
+            <td colspan="3">
+                <input type="text" id="hoten" name="yourname" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="tll">Email</label>
+                
+            </td>
+            <td colspan="3">
+                <input type="text" id="email" name="email"/>
+            </td>
+        </tr>
+        <tr >
+            <td rowspan=3 >
+                <label class="tll" id="sothich">Sở thích</label>
+                
+            </td>
+            <td>
+                    <input type="checkbox" id="thethao" name="hobby" />
+                    <label for="thethao" class="sothich1">Thể thao</label>    
+            </td>
+            <td>
+                <input type="checkbox" id="amnhac" name="hobby" />
+                <label for="amnhac" class="sothich1">Âm nhạc</label>
+            </td>
+            <td>
+                <input type="checkbox" id="docsach" name="hobby" />
+                <label for="thethao" class="sothich1">Đọc sách</label>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                <input type="checkbox" id="luotweb" name="hobby" />
+                <label for="luotweb" class="sothich1">Lướt web</label> 
+            </td>
+            <td>
+                <input type="checkbox" id="choigame" name="hobby"/>
+                <label for="choigame" class="sothich1">Chơi game</label>
+            </td>
+            <td>
+                <input type="checkbox" id="dienanh" name="hobby"/>
+                <label for="thethao" class="sothich1">Điện ảnh</label>
+            </td>
+        
+        </tr>
+        <tr> 
+            <td colspan="3">
+                <input type="checkbox" id="dulich" name="hobby" />
+                <label for="dulich" class="sothich1">Du lịch</label> 
+            </td>
+        
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <input type="button" id="btngui"class="btn" name="thethao" value="Gửi thông tin"/>
+                <input type="reset" id="reset" class="btn" value="Nhập lại"/>
+            </td>
+            
+        </tr>
+    </table>
+</form>
+
+</div>
+<style>
+    #all{
+       width: 45%;
+        background-color:rgb(194, 247, 247); 
+        height: 500px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    form {
+        padding:25px;
+        height: 90%;
+    }
+    table {
+        background-color:white; 
+        height:100%;
+        width: 100%;
+    }
+    th{
+        font-size:30px;
+        background-color:coral;
+    }
+    td{
+        font-size:20px;
+    }
+    
+    .tll{
+        float: right;
+        color:blue;
+    }
+   .btn{
+        font-size:30px;
+        
+   }
+   
+   .sothich1{
+       color:coral;
+   }
+   input[type="text"] {
+       margin-left:5px;
+       height: 25px;
+       
+   }
+   #hoten{
+       width: 400px;
+   }
+   #email{
+       width: 300px;
+   }
+</style>
+    </body>
+
+</html>

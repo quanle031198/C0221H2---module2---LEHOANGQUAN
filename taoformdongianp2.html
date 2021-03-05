@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tạo form đơn giản p2</title>
+    </head>
+    <body>
+<div id="all">
+    
+    <form>
+    <table >
+        <tr>
+            <td colspan="2" id="title">Đăng ký học viên</td>
+            
+        </tr>
+        <tr>
+            <td class="muc">Họ tên</td>
+            <td><input id="hoten" class='nhap' type="text"/></td>
+        </tr>
+        <tr>
+            <td class="muc">Ngày sinh</td>
+            <td><input id="ngaysinh" class='nhap' type="number"/></td>
+        </tr>
+        <tr>
+            <td class="muc">Giới tính</td>
+            <td><input type="radio" value="nam" name="gt"/>Nam <input type="radio" value="nu" name="gt"/> Nữ</td>
+        </tr>
+        <tr>
+            <td class="muc">Địa chỉ</td>
+            <td><textarea id="diachi"></textarea></td>
+        </tr>
+        <tr>
+            <td class="muc">Lớp</td>
+            <td>
+            <select>
+                <option>-Chọn lớp-</option>
+                <option value="1">PHP</option>
+                <option value="2">HTML</option>
+                <option value="3">JAVA</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td class="muc">Email</td>
+            <td><input id="email" class='nhap' type="email"/></td>
+        </tr>
+        <tr>
+            <td class="muc">Điện thoại</td>
+            <td><input id="dienthoai" class='nhap' type="number"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >
+                <input type="button" id="btndk" class="btn" value="Đăng ký"/>
+                <input type="reset"class="btn" value="Nhập lại"/>
+            </td>
+            
+        </tr>
+    </table>
+    </form>
+
+</div>
+<style>
+    #all{
+       width: 40%;
+        background-color:rgb(218, 218, 148); 
+        height: 100%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    table {
+        
+        height:100%;
+        width: 100%;
+    }
+    
+    #title{
+        font-size:30px;
+        background-color:rgb(149, 247, 250);
+        color:blue;
+    }
+    td{
+        font-size:15px;
+    }
+    .muc{
+        color:blue;
+    }
+   .btn{
+        font-size:25px;
+        
+   }
+   .nhap{
+       height:25px;
+   }
+   
+   #hoten{
+       width: 300px;
+   }
+   #diachi{
+      height:60px;
+      width:200px;
+   }
+
+</style>
+    </body>
+
+</html>

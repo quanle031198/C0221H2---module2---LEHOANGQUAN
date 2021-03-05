@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tạo form lấy survey khách hàng</title>
+    </head>
+    <body>
+        <div id="all">
+            <div id="top">
+                <h1>Market Research Survey</h1>
+                <span>Please take a few moments to complete this satisfaction survey.</span>
+                
+            </div>
+            <hr/>
+         <div id="main">  
+            <div id="main1">
+                
+            <div id="tb-main1">
+                <table>
+                    <tr><td><label>What is your age range?</label>
+                        <br/>
+                        <select>
+                            <option value="1">18-24</option>
+                            <option value="2">25-34</option>
+                            <option value="3">35-50</option>
+                            <option value="4">50+</option>
+                        </select>
+                    </td></tr>
+                    <tr><td><label>What is your yearly income range?</label>
+                        <br/>
+                        <select>
+                            <option value="1">$0 - $25,000</option>
+                            <option value="2">$25,001 - $50,000</option>
+                            <option value="3">$50,001 -$100,000</option>
+                            <option value="4">$100,000+</option>
+                        </select>
+                    </td></tr>
+                </table>
+            </div>
+            <div id="tb-main2">
+                <table>
+                    <tr><td><label class="tb-main2-title">Gender Identity</label>
+                        <br/>
+                        <input type="radio" name="gender" id="male" value="1"><label class="tb-main2-info" for="male"> Male</label>
+                        <br/>
+                        <input type="radio" name="gender" id="female" value="2"> <label class="tb-main2-info" for="female"> Female</label>
+                        <br/>
+                        <input type="radio" name="gender" id="nonbinary" value="3"><label class="tb-main2-info" for="nonbinary"> Nonbinary</label>
+                        <br/>
+                        <input type="radio" name="gender" id="other" value="4"><label class="tb-main2-info" for="other"> Other</label>
+                        <br/>
+                        <input class="tb-main2--input-gender" type="text" name="gender">
+                    </td></tr>
+                    <tr><td><label class="tb-main2-title">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label>
+                        <br/>
+                        <input type="checkbox" name="" value="1" id="pro1"> <label class="tb-main2-info" for="pro1">Product 1</label>
+                        <br/>
+                        <input type="checkbox" name="" value="2" id="pro2"> <label class="tb-main2-info" for="pro2">Product 2</label>
+                        <br/>
+                        <input type="checkbox" name="" value="3" id="pro3"> <label class="tb-main2-info" for="pro3">Product 3</label>
+                    </td></tr>
+                    <tr><td><label class="tb-main2-title">How often would you use our new product?</label>
+                        <br/>
+                        <input type="radio" name="np" id="daily" value="1"> <label class="tb-main2-info" for="daily"> Daily</label>
+                        <br/>
+                        <input type="radio" name="np" id="weekly" value="2"> <label class="tb-main2-info" for="weekly"> Weekly</label>
+                        <br/>
+                        <input type="radio" name="np" id="monthly" value="3"> <label class="tb-main2-info" for="monthly"> Monthly</label>
+                        
+                    </td></tr>
+                </table>
+            </div>
+            <div id="tb-main3">
+                <table>
+                    <tr><td><label>What would you pay for the new product?</label>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td>$</td>
+                                <td><input type="text"class="tb-main3-input-dollas" name=""></td>
+                                <td>.</td>
+                                <td><input type="text"class="tb-main3-input-cents" name=""></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><label class="tb-main3-lable">Dollas</label></td>
+                                <td></td>
+                                <td><label class="tb-main3-lable">Cents</label></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                    <tr><td><label>What is your yearly income range?</label>
+                        <br/>
+                        <textarea class="tb-main3-txtarea"></textarea>
+                    </td></tr>
+                </table>
+            </div>
+            </div>
+            <div id="main2">
+                <span>Please rate your level of agreement with the following statements.</span>
+                <table class="tb-main4" border="1">
+                    <tr class="m4-tt">
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tb-main4-title">Our products are priced fairly.</td>
+                        <td class="td-m4"><input type="radio" name="priced" class="tb-m4"><label class="m4">1</label></td>
+                        <td class="td-m4"><input type="radio" name="priced" class="tb-m4"><label class="m4">2</label></td>
+                        <td class="td-m4"><input type="radio" name="priced" class="tb-m4"><label class="m4">3</label></td>
+                        <td class="td-m4"><input type="radio" name="priced" class="tb-m4"><label class="m4">4</label></td>
+                    </tr>
+                    <tr>
+                        <td class="tb-main4-title">Our products are high quality.</td>
+                        <td class="td-m4"><input type="radio" name="quality" class="tb-m4"><label class="m4">1</label></td>
+                        <td class="td-m4"><input type="radio" name="quality" class="tb-m4"><label class="m4">2</label></td>
+                        <td class="td-m4"><input type="radio" name="quality" class="tb-m4"><label class="m4">3</label></td>
+                        <td class="td-m4"><input type="radio" name="quality" class="tb-m4"><label class="m4">4</label></td>
+                    </tr>
+                    <tr>
+                        <td class="tb-main4-title">You would recommend our product to a friend or coworker.</td>
+                        <td class="td-m4"><input type="radio" name="recommend" class="tb-m4"><label class="m4">1</label></td>
+                        <td class="td-m4"><input type="radio" name="priced" class="tb-m4"><label class="m4">2</label></td>
+                        <td class="td-m4"><input type="radio" name="recommend" class="tb-m4"><label class="m4">3</label></td>
+                        <td class="td-m4"><input type="radio" name="recommend" class="tb-m4"><label class="m4">4</label></td>
+                    </tr>
+                    
+                </table>
+                
+            </div>
+            <div id="click"><button>Submit</button></div>
+        </div>
+        </div>
+<style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                width: 100%;
+                height:100%
+            }
+            #all{
+                width: 100%;
+                margin-top: 5px;
+            }
+            #top{
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                font-size: 70%;
+                font-weight: normal;
+                margin-left: 8px;
+                margin-bottom: 10px;
+            }
+            #top span{
+                
+                color: #555;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+            }
+            #main{
+                margin-left:8px;
+
+            }
+            #main1{
+                margin-bottom: 10px;
+            }
+            #tb-main1{
+                margin-bottom: 10px;
+            }
+            
+            #tb-main1 label{
+                font-size: 15px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+                font-weight: bold;
+            }
+            #tb-main1 select{
+                width:800px;
+                height:25px;
+                font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+                font-size: 15px;
+            }
+            #tb-main2{
+                margin-bottom: 10px;
+            }
+            .tb-main2-title{
+                font-size: 15px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+                font-weight: bold;
+            }
+            .tb-main2-info{
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                font-size: 15px;
+            }
+            .tb-main2--input-gender {
+                margin-left: 18px;
+            }
+            #tb-main3{
+                font-size: 15px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+                font-weight: bold;
+            }
+
+            .tb-main3-lable{
+                font-size: 12px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                font-weight:normal;
+            }
+            .tb-main3-input-dollas{
+                width: 60px;
+                height:20px;
+            }
+            .tb-main3-input-cents{
+                width: 20px;
+                height:20px;
+            }
+            .tb-main3-txtarea{
+                width:470%;
+                height:200px;
+            }
+            
+            #main2 span{
+                font-size: 15px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+            }
+            .tb-main4{
+                border-collapse: collapse;
+                font-size: 15px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .01em;
+            }
+            .tb-main4 th{
+                height:40px;
+            }
+            .m4-tt{
+                background-color: #c0bdbd;
+            }
+            .tb-main4 tr:nth-child(3) {
+                background-color: #e2e2e2;
+                                }
+            .tb-main4-title
+            {
+                padding: 5px;
+                font-weight: bold;
+            }
+            .tb-m4{
+                
+                display: block;
+                margin-left:68px ;
+                margin-top:5px ;
+            }
+            .m4{
+                font-size: 13px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                text-align:center;
+            }
+            .td-m4{
+                width: 150px;
+                text-align:center;
+                
+            }
+            #click button{
+                width:80px;
+                font-size: 14px;
+                font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+                letter-spacing: .05em;
+                font-weight: bold;
+                margin-top: 15px;
+                border-radius:5px;
+            }
+            
+</style>
+    </body>
+
+</html>
+
+<!--  -->
